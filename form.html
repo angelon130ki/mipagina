@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Pedido - Botas Burguer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff5e1;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    form {
+      background-color: #ff6b6b;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      color: white;
+      box-sizing: border-box;
+    }
+
+    form h2 {
+      font-family: 'Brush Script MT', cursive;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input[type="text"], input[type="tel"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      box-sizing: border-box;
+      color: #333;
+    }
+
+    a.confirmar-compra {
+      display: block;
+      width: 100%;
+      background-color: #fff5e1;
+      color: #ff6b6b;
+      border-radius: 15px;
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+
+    a.confirmar-compra:hover {
+      background-color: #ffe0cc;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Confirmar Pedido</h2>
+
+    <label for="tipo-entrega">pasar a recoger / Enviar</label>
+    <select id="tipo-entrega" name="tipo_entrega">
+      <option value=""></option>
+      <option value="recoger">pasar a recoger</option>
+      <option value="enviar">Enviar</option>
+    </select>
+
+    <label for="nombre">nombre y hamburguesa pedida</label>
+    <input type="text" id="nombre y hamburguesa pedida" name="nombre" />
+
+    <label for="telefono">numero de teléfono</label>
+    <input type="tel" id="telefono" name="telefono" />
+
+    <label for="direccion">direccion</label>
+    <input type="text" id="direccion" name="direccion" />
+
+    <label for="referencias">referencias de entrega</label>
+    <input type="text" id="referencias" name="referencias" />
+
+ <a href="file:///C:/Users/angel/Downloads/trabajo%20final/listo.html" target="_blank" class="confirmar-compra">confirmar compra</a>
+  </form>
+</body>
+</html>
